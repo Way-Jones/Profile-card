@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile-Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="profile-card">
+      <img
+        src="images/IMG_20240509_222840_037.jpg" alt="Profile-pic" class="img"
+        
+      />
+      <h1 id="fullName">Wainfen Jones</h1>
+      <h2 id="job">Front-End Developer</h2>
+      <p id="shortBio">
+        I am a Full-Stack Developer specializing in Next.js, React Native, and TypeScript, with 3 years of front-end experience and strong backend
+        skills. Beyond development, I have a solid foundation in system administration and IT infrastructure, backed by a Google certification.
+        I am also expanding my knowledge in data science and blockchain, aiming to build innovative tech solutions.
+      </p>
+      <p id="location">Bambili, Cameroon</p>
+      <p id="email">joneswainfen@gmail.com</p>
+      <div class="socialmedia" id="socialLinks">
+        <a href="www.linkedin.com/in/wainfen-jones-ankimbom-81a2472b1" target="_blank">LinkedIn</a>
+        <a href="https://github.com/spykelionel" target="_blank">GitHub</a>
+        <a href="https://twitter.com/spykelionel" target="_blank">Twitter</a>
+      </div>
+      <p id="currentTimeUTC">
+        Current UTC Time: <span id="time"></span>
+      </p>
+    </div>
+    <script>
+        function updateUTCTime() {
+    const utcTimeElement = document.getElementById("time");
+    const now = new Date();
+    utcTimeElement.textContent = now.toUTCString();
+  }
+  updateUTCTime();
+    </script>
+  </body>
+</html>
